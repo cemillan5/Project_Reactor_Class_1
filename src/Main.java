@@ -1,12 +1,15 @@
-import java.util.function.Function;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Function<Integer, Integer> square = x -> x * x;
-        Function<Integer, Integer> doubles = x -> x * 2;
 
-        //Function Compositions
-        Function<Integer, Integer> doubleSquare = square.compose(doubles);
-        System.out.println(doubleSquare.apply(5));
+        int result = sum(3,3);
+        System.out.println(result);
+
         }
+
+    public static int sum(int a, int b){
+        return a + b;
+    }
+
 }

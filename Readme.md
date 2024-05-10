@@ -41,3 +41,75 @@ source: [Java Functional Programming Essentials - Medium](https://medium.com/@fu
 
 source: [Functional Programming in Java - Baeldung](https://www.baeldung.com/java-functional-programming)
 
+### Higher Order function Example
+
+```java
+import java.util.function.Function;
+
+public class Main {
+    public static void main(String[] args) {
+        Function<Integer, Integer> square = x -> x * x;
+        Function<Integer, Integer> doubles = x -> x * 2;
+
+        //Function Compositions
+        Function<Integer, Integer> doubleSquare = square.compose(doubles);
+        System.out.println(doubleSquare.apply(5));
+        }
+}
+```
+
+2. Data Inmutability
+
+In functional programming, we can’t modify a variable after it’s been initialized. We can create new variables – but we 
+can’t modify existing variables, and this really helps to maintain state throughout the runtime of a program. Once we 
+create a variable and set its value, we can have full confidence knowing that the value of that variable will never change.  
+
+source [Functional Programming Paradigm - geeksforgeeks](https://www.geeksforgeeks.org/functional-programming-paradigm/)
+
+Variables Inmutability examples
+
+```java
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> numbers = List.of(1,2,3,4,5);
+
+        // Map Operation to create a new list with square values of each number
+
+        List<Integer> squares = numbers.stream()
+                .map(x -> x * x)
+                .toList();
+        
+        System.out.println(squares);
+        
+        }
+}
+```
+
+3. Pure Functions
+
+A function is called **pure function** if it always returns the same result for same argument values and it has no side 
+effects like modifying an argument (or global variable) or outputting something. The only result of calling a pure 
+function is the return value.
+
+
+Pure Function Example
+
+```java
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int result = sum(3,3);
+        System.out.println(result);
+
+        }
+
+    public static int sum(int a, int b){
+        return a + b;
+    }
+
+}
+```
