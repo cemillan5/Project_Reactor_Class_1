@@ -163,3 +163,44 @@ public class Main {
 
 The reduce method, also known as fold in functional programming lingo, accumulates the elements of the stream with a 
 BinaryOperator<T> and reduces them to a single value:
+
+```
+T reduce(T initialValue, BinaryOperator<T> accumulator)
+```
+
+source: [Functional Programming With Java: map, filter, reduce](https://belief-driven-design.com/functional-programm-with-java-map-filter-reduce-77e479bd73e/)
+
+## Guide to Stream.reduce()
+
+Reduction stream operations allow us to produce one single result from a sequence of elements, by repeatedly applying a 
+combining operation to the elements in the sequence.
+
+### The Key Concepts: Identity, Accumulator and Combiner
+
+Before we look deeper into using the Stream.reduce() operation, let’s break down the operation’s participant elements 
+into separate blocks. That way, we’ll understand more easily the role that each one plays.
+
+- **Identity** – an element that is the initial value of the reduction operation and the default result if the stream is empty.
+- **Accumulator** – a function that takes two parameters: a partial result of the reduction operation and the next element of the stream.
+- **Combiner** – a function used to combine the partial result of the reduction operation when the reduction is parallelized or when there’s a mismatch between the types of the accumulator arguments and the types of the accumulator implementation.
+
+
+source: [Guide to Stream.reduce()](https://www.baeldung.com/java-stream-reduce)
+
+## Functional Programming with Java - Reducing
+
+In functional programming, reducing is a technique to reduce a stream of values to a single result by apply a function 
+on all the values. Java provides reduce() function in a Stream class from Java 8 onwards. A stream has inbuilt reducing 
+methods like sum(), average(), count() as well which works on all elements of the stream and returns the single result.
+
+source: [Functional Programming with Java - Reducing](https://www.tutorialspoint.com/functional_programming_with_java/functional_programming_with_java_reducing.htm)
+
+## Stream.reduce() in Java with examples
+
+Many times, we need to perform operations where a stream reduces to single resultant value, for example, maximum, minimum, 
+sum, product, etc. Reducing is the repeated process of combining all elements.
+
+reduce operation applies a binary operator to each element in the stream where the first argument to the operator is 
+the return value of the previous application and second argument is the current stream element.
+
+### Syntax:
