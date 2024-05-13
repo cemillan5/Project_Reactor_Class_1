@@ -1,0 +1,15 @@
+
+”	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÛĞ™óşÿÿÿÿ8¸ù••÷1J$0ef5c4f6-a845-4eef-8b1d-8e251939f8f7
+]
+java:S1220""Move this file to a named package.8ºù••÷1J$f4a735fe-2391-4354-b2b4-212ffa1f56f3
+“
+java:S3655"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(û‰£µ8åÿ—•÷1J$d0bcacf9-ac8b-466a-a843-e6b01db3070b
+˜
+java:S3655&"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¢¸Çúùÿÿÿÿ8£•÷1J$4c8aa19d-5a04-43ae-b607-72c735b0df76
+r	java:S106"+Replace this use of System.out by a logger.(ı‚çüÿÿÿÿ8ñÿ—•÷1J$eae3d247-9524-46d0-999f-0febae966e3e
+r	java:S106"+Replace this use of System.out by a logger.(¹¦…‡úÿÿÿÿ8ôÿ—•÷1J$713007d6-d211-498f-b309-b8c8bd2baf5d
+l	java:S106"+Replace this use of System.out by a logger.(áÌ8õÿ—•÷1J$157c528f-71ae-49f2-9267-83383d2001f6
+r	java:S106"+Replace this use of System.out by a logger.(®İÃéşÿÿÿÿ8ûÿ—•÷1J$84f5b4e9-9dc0-453b-81c0-58a74cc46f04
+m	java:S106"+Replace this use of System.out by a logger.(¤ÜÃ¢8éƒ›•÷1J$0cde647c-6f55-4161-827f-2a54547a8dd2
+r	java:S106""+Replace this use of System.out by a logger.(¹¦…‡úÿÿÿÿ8ìƒ›•÷1J$2e02abb1-1d6e-48b4-bd3e-9977c2440931
+m	java:S106*"+Replace this use of System.out by a logger.(•ŒóÀ8½•÷1J$d0be1b5a-4ec4-472c-9c25-b08bab8bea81

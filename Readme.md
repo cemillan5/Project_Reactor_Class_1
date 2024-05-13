@@ -280,3 +280,153 @@ public class Reducev2 {
 
 # Filter
 
+## How to use Stream.filter method in Java 8? Example Tutorial
+
+The **filter()** method as its name suggests is used to perform filtering 
+based upon some boolean conditions.  The condition is applied to each 
+element of Stream and those who pass the condition moves to the next stage 
+and those who don't get filtered out.
+
+For example,  if you have a stream of integral numbers that contains both 
+even and odd numbers then by using the filter method, you can create another 
+stream of even numbers or odd numbers by filtering out others.
+
+Though the filter() method is a little bit counter-intuitive, I mean, in order 
+to create a stream of even numbers you call filter( i -> i % 2 == 0) which means 
+you do filter(isEven()) but, you are actually filtering out odd numbers to create 
+a new stream of even numbers, but that's how it works.
+
+I think select() would have been a positive and proper name for this operation, but, 
+we don't have any control over that can't change that now.
+
+The key benefit of using the filter() method is lazy evaluation i.e. no data comparison 
+is performed unless you call a terminal operation on stream like findFirst() or forEach().
+
+Source: [How to use Stream.filter method in Java 8? Example Tutorial](https://www.java67.com/2016/08/java-8-stream-filter-method-example.html)
+
+## How to Stream.filter method works in Java 8
+
+In order to learn how to use the **filter()** method in Java 8, it's important that you also
+know how it works, at least at a high level. Let's see an example of a **filter() method** to
+understand the lazy evaluation it does.
+
+Suppose we have a list of integer numbers and we want to find the first number which is
+divisible by both 2 and 3, let's see how to solve this problem in Java 8.
+
+```java
+import java.util.Arrays;
+import java.util.List;
+
+public class filterv1 {
+    public static void main(String[] args) {
+        List<Integer> listOfNumbers = Arrays.asList(1, 2, 3, 4, 5, 6, 12, 18);
+
+        Integer lcm = listOfNumbers.stream()
+                .filter(i -> i % 2 == 0)
+                .filter(i -> i % 3 == 0)
+                .findFirst().get();
+
+        System.out.println(lcm);
+    }
+}
+
+```
+
+This code is returning the first number which is divisible by both 2 and 3.
+
+## How to use filter() method in Java 8
+
+Here is a sample Java program to demonstrate how to use the filter() method 
+of Stream class to filter elements from a List or Stream, based upon some conditions,
+specified by the Predicate functional interface of Java 8.
+
+
+```java
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class filterv2 {
+
+    public static void main(String[] args) {
+        List<String> versions = new ArrayList<>();
+
+        versions.add("Lollipop");
+        versions.add("KitKat");
+        versions.add("Jelly Bean");
+        versions.add("Ice Cream Sandwidth");
+        versions.add("Honeycomb");
+        versions.add("Gingerbread");
+
+        // Using one filter()
+        // print all versions whose length is greater than 10 character
+        System.out.println("All versions whose length greater than 10");
+
+        versions.stream() .filter(s -> s.length() > 10)
+                .forEach(System.out::println);
+
+        System.out.println("first element which has letter 'e' ");
+        String first = versions.stream()
+                .filter(s -> s.contains("e"))
+                .findFirst().get(); System.out.println(first);
+
+                // Using multiple filter
+        System.out.println("Element whose length is > 5 and startswith G");
+        versions.stream()
+                .filter(s -> s.length() > 8)
+                .filter(s -> s.startsWith("G"))
+                .forEach(System.out::println);
+
+        // another example of filter() method in Java 8
+        List<Integer> listOfNumbers = Arrays.asList(1, 2, 3, 4, 5, 6, 12, 18);
+        Integer lcm = listOfNumbers.stream()
+                .filter(i -> i % 2 == 0)
+                .filter(i -> i % 3 == 0)
+                .findFirst().get();
+        System.out.println("first number divisible by 2 and 3 in the list is : " + lcm);
+
+
+    }
+}
+
+```
+
+### Filter Function
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class filterv3 {
+
+    public static <T> List<T> filter(List<T> list, Predicate<T> predicate){
+        List<T> result = new ArrayList<>();
+        for(T element: list){
+            if(predicate.test(element)){
+                result.add(element);
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+        List<Integer> numbers = List.of(1,2,3,4,5,6,7,8,9,10);
+
+        //Filter square numbers
+        List<Integer> pairs = filter(numbers, n-> n % 2 == 0);
+        System.out.println("pair numbers: "+pairs);
+
+        //Filter numbers greater than 5
+        List<Integer> greaterThan5 = filter(numbers, n -> n > 5);
+        System.out.println("Numbers greater than 5: "+ greaterThan5);
+
+        // Filter numbers smaller or equal to 3
+        List<Integer> smallerOrEqualTo3 = filter(numbers, n -> n <= 3);
+    System.out.println("Numbers smaller or equal to 3: "+ smallerOrEqualTo3);
+    
+    }
+}
+
+```
