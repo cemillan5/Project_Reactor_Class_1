@@ -13,3 +13,5 @@ A
 src/filterv2.java,e\6\e68ff248622bcd1174290d28c890a86b840b4a54
 A
 src/filterv3.java,7\8\787b12c5ee2a5cc7753d801227080082a9bbecf8
+J
+src/practiceExercises.java,9\1\910313cf39c2635a91e0a61b807aea9a221e7dc5

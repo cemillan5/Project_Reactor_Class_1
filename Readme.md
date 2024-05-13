@@ -430,3 +430,227 @@ public class filterv3 {
 }
 
 ```
+
+
+----
+
+# Practice Excercise with Answers
+
+
+In this exercise, we will practice function composition using different operations on a list of numbers.
+
+1. Implement a function called "double" that takes an integer as an argument and returns twice that number.
+
+2. Implement a function called "isEven" that takes an integer as an argument and returns true if the number is even, or false otherwise.
+
+3. Use the functions "filter" and "map" to create a new function called "doubleAndFilterEvens" that takes a list of numbers, doubles each number, and filters only the even numbers.
+
+4. Test your "doubleAndFilterEvens" function with different lists of numbers to ensure it works correctly.
+
+```java
+import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public class practiceExercises {
+
+    public static int duplicate(int number){
+        return number * 2;
+    }
+
+    public static boolean isPair(int number){
+        return number % 2 == 0;
+    }
+
+
+    public static List<Integer> duplicateAndFilterPairs(List<Integer> numbers){
+        Function<Integer, Integer> duplicateFunction = practiceExercises::duplicate;
+        Predicate<Integer> isPairFunction = practiceExercises::isPair;
+
+        return numbers.stream()
+                .map(duplicateFunction)
+                .filter(isPairFunction)
+                .toList();
+
+    }
+
+
+    public static void main(String[] args) {
+
+
+        List<Integer> numbers = List.of(1,2,3,4,5,6,7,8,9,10);
+        System.out.println("Original List: "+ numbers);
+
+        List<Integer> results = duplicateAndFilterPairs(numbers);
+        System.out.println("Results: "+ results);
+
+
+    }
+}
+```
+
+
+
+---
+
+# Generic Class in Java
+
+Java Generics was introduced to deal with type-safe objects. It makes the code stable.Java Generics methods and classes, 
+enables programmer with a single method declaration, a set of related methods, a set of related types. Generics also provide 
+compile-time type safety which allows programmers to catch invalid types at compile time. Generic means parameterized types. 
+Using generics, the idea is to allow any data type to be it Integer, String, or any user-defined Datatype and it is possible 
+to create classes that work with different data types.
+
+A Generic class simply means that the items or functions in that class can be generalized with the parameter(example T) 
+to specify that we can add any type as a parameter in place of T like Integer, Character, String, Double or any other 
+user-defined type.
+
+source: [Generic Class in Java](https://www.geeksforgeeks.org/generic-class-in-java/)
+
+## Example:
+
+```java
+class Solution<T>
+{
+   T data;
+   public static T getData(){
+       return data;
+   }
+}
+```
+
+# Java Genric Methods
+
+Generic Java method takes a parameter and returns some value after performing a task. It is exactly like a normal function, 
+however, a generic method has type parameters that are cited by actual type. This allows the generic method to be used in a 
+more general way. The compiler takes care of the type of safety which enables programmers to code easily since they do not 
+have to perform long, individual type castings.
+
+````java
+  public class GenericMethodTest {
+  // generic method printArray
+  public static < E > void printArray( E[] inputArray ) {
+    // Display array elements
+    for(E element : inputArray) {
+      System.out.printf("%s ", element);
+    }
+    System.out.println();
+  }
+
+  public static void main(String args[]) {
+    // Create arrays of Integer, Double and Character
+    Integer[] intArray = { 1, 2, 3, 4, 5 };
+    Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
+    Character[] charArray = { 'H', 'E', 'L', 'L', 'O' };
+
+    System.out.println("Array integerArray contains:");
+    printArray(intArray);   // pass an Integer array
+
+    System.out.println("\nArray doubleArray contains:");
+    printArray(doubleArray);   // pass a Double array
+
+    System.out.println("\nArray characterArray contains:");
+    printArray(charArray);   // pass a Character array
+  }
+}
+````
+
+source: [Java - Generics](https://www.tutorialspoint.com/java/java_generics.htm)
+
+---
+
+# Bounded Types with Generics in Java
+
+There may be times when you want to restrict the types that can be used as type arguments in a parameterized type. For example, a method that operates on numbers might only want to accept instances of Numbers or their subclasses. This is what bounded type parameters are for.
+
+- Sometimes we don’t want the whole class to be parameterized. In that case, we can create a Java generics method. Since the constructor is a special kind of method, we can use generics type in constructors too.
+- Suppose we want to restrict the type of objects that can be used in the parameterized type. For example, in a method that compares two objects and we want to make sure that the accepted objects are Comparables.
+- The invocation of these methods is similar to the unbounded method except that if we will try to use any class that is not Comparable, it will throw compile time error.
+
+### How to Declare a Bounded Type Parameter in Java?
+
+1. List the type parameter’s name,
+2. Along with the extends keyword
+3. And by its upper bound. (which in the below example c is A.)
+
+### Syntax:
+
+```java
+  <T extends superClassName>
+```
+
+Source: [Bounded Types with Generics in Java](https://www.geeksforgeeks.org/bounded-types-generics-java/)
+
+# Implicitly Typecasting in Java
+
+The process of converting one type of object and variable into another type is referred to as Typecasting. When the 
+conversion automatically performs by the compiler without the programmer's interference, it is called implicit type 
+casting or widening casting.
+
+In implicit typecasting, the conversion involves a smaller data type to the larger type size. For example, the byte 
+datatype implicitly typecast into short, char, int, long, float, and double. The process of converting the lower data 
+type to that of a higher data type is referred to as Widening.
+
+![img.png](img.png)
+
+
+In the same expression, when two different types of variables are involved:
+
+The Java compiler uses the predefined library function for transforming the variables.
+The conversion of variables is done into a common datatype.
+After that, the expression is executed.
+
+source: [Implicitly Typecasting in Java](https://www.javatpoint.com/implicitly-typecasting-in-java)
+
+# What Is Type Erasure?
+
+Type erasure can be explained as the process of enforcing type constraints only at compile time and discarding the 
+element type information at runtime.
+
+Source: [Type Erasure in Java Explained](https://www.baeldung.com/java-type-erasure)
+
+
+# Wildcard Basics
+
+A wildcard is represented by the “?” symbol. It can be used in place of the type parameter in a generic class or method. 
+There are three types of wildcards in Java Generics.
+
+- Unbounded Wildcards: “?” The unbounded wildcard represents a collection that can hold elements of any type. It can be used when we don’t know what type of elements we will be working with.
+
+### Example:
+
+```java
+List<?> list = new ArrayList<>();
+```
+
+- Upper-bounded Wildcards: “? extends Type” The upper-bounded wildcard represents a collection that can hold elements of a specific type or any of its subtypes. It can be used when we want to restrict the collection to hold elements of a specific type or its subtypes.
+
+### Example:
+```java
+List<? extends Number> list = new ArrayList<>();
+```
+
+- Lower-bounded Wildcards: “? super Type” The lower-bounded wildcard represents a collection that can hold elements of a specific type or any of its supertypes. It can be used when we want to restrict the collection to hold elements of a specific type or its supertypes.
+
+### Example:
+
+```java
+List<? super Integer> list = new ArrayList<>();
+```
+
+- Wildcards in Method Parameters
+
+Wildcards can also be used as method parameters. This allows us to write methods that can work with collections of different types.
+
+### Example:
+```java
+public void printList(List<?> list) {
+for (Object elem : list)
+System.out.println(elem + " ");
+System.out.println();
+}
+```
+The above method can be called with a List of any type. The wildcard allows us to accept collections of any type, but 
+we cannot add elements to the list.
+
+source: [Understanding Wildcards in Java Generics](https://medium.com/javarevisited/understanding-wildcards-in-java-generics-4525f9b80a03#:~:text=Wildcard%20Basics,hold%20elements%20of%20any%20type.)
