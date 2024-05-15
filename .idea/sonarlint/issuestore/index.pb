@@ -21,8 +21,6 @@ F
 src/workshop/Main.java,6\d\6d301c1a269c2e41ca7487cff8cec504b35549e9
 D
 src/week_1/Readme.md,d\1\d1927a5d43483084873d6faec2aa64fbad0aecb4
-D
-src/week_1/Main.java,8\7\87f61382d89f60021fda0bec9d00fb3d3e662748
 K
 src/week_1/Transaction.java,9\8\98193448b7ddea3aaffd1e4ea22576b561362de6
 M

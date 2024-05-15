@@ -74,5 +74,15 @@ class BankAccount {
 class Main {
     public static void main(String[] args) {
 
+        var bank = new BankAccount();
+        bank.addTransaction();
+        bank.addTransaction();
+        bank.addTransaction();
+
+//1. obtener el total de depositos realizado
+//2. Encotrar la transaccion de retirno de mayor monto
+//3. Contar el numero de transacciones realizadas en una fecha especifica
+//4. Obtener el promedio de los montos de todas las transacciones
+//5. Filtrar transacciones con montos negativos (retiros)
     }
 }
