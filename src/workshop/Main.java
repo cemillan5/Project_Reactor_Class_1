@@ -45,7 +45,7 @@ public class Main {
 
         long femaleCount = persons
                 .stream()
-               .filter(person -> person.getGender().equals("Female"))
+                .filter(person -> person.getGender().equals("Female"))
                 .count();
 
         System.out.println("The count of people that is female: " + femaleCount);
@@ -62,9 +62,9 @@ public class Main {
 
         double averageAge = persons
                 .stream()
-               .mapToDouble(person -> person.getAge())
+                .mapToDouble(person -> person.getAge())
                 .average()
-               .getAsDouble();
+                .getAsDouble();
 
         System.out.println("The average age of the people is: " + averageAge);
 
@@ -72,7 +72,7 @@ public class Main {
 
         int olderPerson = persons
                 .stream()
-               .mapToInt(person -> person.getAge())
+                .mapToInt(person -> person.getAge())
                 .max()
                 .getAsInt();
 

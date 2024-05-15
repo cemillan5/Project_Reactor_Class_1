@@ -1,20 +1,10 @@
 
-d
+
 java:S1192
-"GDefine a constant instead of duplicating this literal "Female" 3 times.(”ψαΞ8 βαχ1
-G	java:S106"+Replace this use of System.out by a logger.(δµςφ8°βαχ1
-L	java:S106"+Replace this use of System.out by a logger.(ό•ώÿÿÿÿ8°βαχ1
-o
-java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨Ή8°βαχ1
-^
-java:S1612"<Replace this lambda with method reference 'Person::getName'.(Όκ΄½ϋÿÿÿÿ8°βαχ1
-G	java:S106!"+Replace this use of System.out by a logger.(ςη8°βαχ1
-L	java:S106)"+Replace this use of System.out by a logger.(…φκιÿÿÿÿÿ8»βαχ1
-L	java:S1063"+Replace this use of System.out by a logger.(Νίª‡όÿÿÿÿ8»βαχ1
-F	java:S106:"+Replace this use of System.out by a logger.(νϊΦW8»βαχ1
-X
-java:S1612A";Replace this lambda with method reference 'Person::getAge'.(¨­ÿΉ8»βαχ1
-L	java:S106E"+Replace this use of System.out by a logger.(ψ„™άωÿÿÿÿ8ΐβαχ1
-X
-java:S1612K";Replace this lambda with method reference 'Person::getAge'.(”ÿΠ«8ΐβαχ1
-G	java:S106O"+Replace this use of System.out by a logger.(‘γ”8ΐβαχ1
+"GDefine a constant instead of duplicating this literal "Female" 3 times.(”ψαΞ8 βαχ1J$e2fe02ae-13ff-4817-adce-93273a49a1b7
+„
+java:S1612"<Replace this lambda with method reference 'Person::getName'.(Όκ΄½ϋÿÿÿÿ8°βαχ1J$1eecaf3d-fb34-4ca1-9940-e8bba75b628b
+~
+java:S1612A";Replace this lambda with method reference 'Person::getAge'.(¨­ÿΉ8»βαχ1J$8e19febf-9eb0-4601-a504-d0dcc69c5c3b
+~
+java:S1612K";Replace this lambda with method reference 'Person::getAge'.(”ÿΠ«8ΐβαχ1J$2a6d6108-8b10-4659-9709-0c587c474e59
