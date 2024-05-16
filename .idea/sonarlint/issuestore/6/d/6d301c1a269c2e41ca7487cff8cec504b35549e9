@@ -1,20 +1,20 @@
 
 Š
 java:S1192
-"GDefine a constant instead of duplicating this literal "Female" 3 times.(”øáÎ8 âáŸ÷1J$02f3f9fe-1468-4d91-a74b-81d8de8e5a53
-m	java:S106"+Replace this use of System.out by a logger.(äµòö8°âáŸ÷1J$46366ae0-a0f9-4af7-aa5b-8ff3d24921c6
-r	java:S106"+Replace this use of System.out by a logger.(ü•şÿÿÿÿ8°âáŸ÷1J$3156bfc3-cbf7-43e3-85f2-0f026e909ddd
+"GDefine a constant instead of duplicating this literal "Female" 3 times.(”øáÎ8 âáŸ÷1J$2cc3e340-fbd1-485d-9d66-b0a7c8e93edc
+m	java:S106"+Replace this use of System.out by a logger.(äµòö8°âáŸ÷1J$05c07796-c3e2-4891-838d-d1caab06946c
+r	java:S106"+Replace this use of System.out by a logger.(ü•şÿÿÿÿ8°âáŸ÷1J$e852c309-cde3-4518-bfc2-223444d752b0
 •
-java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8°âáŸ÷1J$5ae78c5c-ccdd-4cb6-a630-1bd330f77a68
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8°âáŸ÷1J$fd5b7295-3603-489e-a0f4-aa994a605501
 „
-java:S1612"<Replace this lambda with method reference 'Person::getName'.(¼ê´½ûÿÿÿÿ8°âáŸ÷1J$f2054670-88da-40c2-bdc0-b4c23363f9eb
-m	java:S106!"+Replace this use of System.out by a logger.(òçˆ8°âáŸ÷1J$82954b74-fb93-4748-b201-8847fc2ca8b3
-r	java:S106)"+Replace this use of System.out by a logger.(…öêéÿÿÿÿÿ8»âáŸ÷1J$1be70995-dcfd-40b0-9ae2-c1b6ad89ac3a
-r	java:S1063"+Replace this use of System.out by a logger.(Íßª‡üÿÿÿÿ8»âáŸ÷1J$42e84b29-a03c-4a4f-bd80-3ddf4a879488
-l	java:S106:"+Replace this use of System.out by a logger.(íúÖW8»âáŸ÷1J$05b67451-7fc6-4baf-9a15-0898686d86b6
+java:S1612"<Replace this lambda with method reference 'Person::getName'.(¼ê´½ûÿÿÿÿ8°âáŸ÷1J$635d7a89-d974-477f-a13d-110fc836abb7
+m	java:S106!"+Replace this use of System.out by a logger.(òçˆ8°âáŸ÷1J$01e73496-229c-4250-91db-1d6aae0eabfc
+r	java:S106)"+Replace this use of System.out by a logger.(…öêéÿÿÿÿÿ8»âáŸ÷1J$8f2d406b-a808-42b8-85bb-89504e184beb
+r	java:S1063"+Replace this use of System.out by a logger.(Íßª‡üÿÿÿÿ8ø²Äù÷1J$c4697de4-24d4-4e04-806c-37f87fc49cc6
+F	java:S106:"+Replace this use of System.out by a logger.(íúÖW8¢…Êù÷1
 ~
-java:S1612A";Replace this lambda with method reference 'Person::getAge'.(¨­ÿ¹8»âáŸ÷1J$235a0840-ecfe-45f0-8a95-c2ec09284b89
-r	java:S106E"+Replace this use of System.out by a logger.(ø„™Üùÿÿÿÿ8ÀâáŸ÷1J$70fb5c38-c549-4b67-9876-f8a0cdf4bb24
-~
-java:S1612K";Replace this lambda with method reference 'Person::getAge'.(”ÿĞ«8ÀâáŸ÷1J$398c0fae-606c-4a0a-93b7-cf6e123600fc
-m	java:S106O"+Replace this use of System.out by a logger.(‘ã”8ÀâáŸ÷1J$dff81b45-8aa8-44e6-a8d4-0182f2191859
+java:S1612A";Replace this lambda with method reference 'Person::getAge'.(¨­ÿ¹8ø²Äù÷1J$0576e7fd-6e7f-4ccc-8f06-791e2a81791f
+L	java:S106E"+Replace this use of System.out by a logger.(ø„™Üùÿÿÿÿ8¢…Êù÷1
+X
+java:S1612K";Replace this lambda with method reference 'Person::getAge'.(”ÿĞ«8±…Êù÷1
+G	java:S106O"+Replace this use of System.out by a logger.(‘ã”8±…Êù÷1
