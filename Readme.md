@@ -46,7 +46,7 @@ source: [Functional Programming in Java - Baeldung](https://www.baeldung.com/jav
 ```java
 import java.util.function.Function;
 
-public class Main {
+public class generalOverview.Main {
     public static void main(String[] args) {
         Function<Integer, Integer> square = x -> x * x;
         Function<Integer, Integer> doubles = x -> x * 2;
@@ -71,7 +71,7 @@ Variables Inmutability examples
 ```java
 import java.util.List;
 
-public class Main {
+public class generalOverview.Main {
     public static void main(String[] args) {
         List<Integer> numbers = List.of(1,2,3,4,5);
 
@@ -99,7 +99,7 @@ Pure Function Example
 ```java
 import java.util.List;
 
-public class Main {
+public class generalOverview.Main {
     public static void main(String[] args) {
 
         int result = sum(3,3);
@@ -135,7 +135,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
-public class Main {
+public class generalOverview.Main {
 
     public static <T,R> List<R> map(List<T> list, Function<T,R> function){
         List<R> result = new ArrayList<>();
@@ -223,7 +223,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class Reducev1 {
+public class generalOverview.Reducev1 {
     public static void main(String[] args) {
         // creating a list of Strings
         List<String> words = Arrays.asList("GFG", "Geeks", "for",
@@ -254,7 +254,7 @@ public class Reducev1 {
 import java.util.List;
 import java.util.function.BinaryOperator;
 
-public class Reducev2 {
+public class generalOverview.Reducev2 {
 
     public static <T> T reduce(List<T> list, T identity, BinaryOperator<T> operator){
         T result = identity;
@@ -317,7 +317,7 @@ divisible by both 2 and 3, let's see how to solve this problem in Java 8.
 import java.util.Arrays;
 import java.util.List;
 
-public class filterv1 {
+public class generalOverview.filterv1 {
     public static void main(String[] args) {
         List<Integer> listOfNumbers = Arrays.asList(1, 2, 3, 4, 5, 6, 12, 18);
 
@@ -346,7 +346,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class filterv2 {
+public class generalOverview.filterv2 {
 
     public static void main(String[] args) {
         List<String> versions = new ArrayList<>();
@@ -398,7 +398,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class filterv3 {
+public class generalOverview.filterv3 {
 
     public static <T> List<T> filter(List<T> list, Predicate<T> predicate){
         List<T> result = new ArrayList<>();
@@ -452,7 +452,7 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public class practiceExercises {
+public class generalOverview.practiceExercises {
 
     public static int duplicate(int number){
         return number * 2;
@@ -464,8 +464,8 @@ public class practiceExercises {
 
 
     public static List<Integer> duplicateAndFilterPairs(List<Integer> numbers){
-        Function<Integer, Integer> duplicateFunction = practiceExercises::duplicate;
-        Predicate<Integer> isPairFunction = practiceExercises::isPair;
+        Function<Integer, Integer> duplicateFunction = generalOverview.practiceExercises::duplicate;
+        Predicate<Integer> isPairFunction = generalOverview.practiceExercises::isPair;
 
         return numbers.stream()
                 .map(duplicateFunction)
