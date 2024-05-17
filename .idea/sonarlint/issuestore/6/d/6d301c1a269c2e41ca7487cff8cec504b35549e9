@@ -1,7 +1,20 @@
 
+Š
+java:S1192
+"GDefine a constant instead of duplicating this literal "Female" 3 times.(”øáÎ8 âáŸ÷1J$2cc3e340-fbd1-485d-9d66-b0a7c8e93edc
+m	java:S106"+Replace this use of System.out by a logger.(äµòö8°âáŸ÷1J$05c07796-c3e2-4891-838d-d1caab06946c
+r	java:S106"+Replace this use of System.out by a logger.(ü•şÿÿÿÿ8°âáŸ÷1J$e852c309-cde3-4518-bfc2-223444d752b0
+•
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8°âáŸ÷1J$fd5b7295-3603-489e-a0f4-aa994a605501
 „
-java:S1612"<Replace this lambda with method reference 'Person::getName'.(¼ê´½ûÿÿÿÿ8°âáŸ÷1J$f91d68cd-7924-4da1-b13d-2f43f3cfc654
+java:S1612"<Replace this lambda with method reference 'Person::getName'.(¼ê´½ûÿÿÿÿ8°âáŸ÷1J$635d7a89-d974-477f-a13d-110fc836abb7
+m	java:S106!"+Replace this use of System.out by a logger.(òçˆ8°âáŸ÷1J$01e73496-229c-4250-91db-1d6aae0eabfc
+r	java:S106)"+Replace this use of System.out by a logger.(…öêéÿÿÿÿÿ8»âáŸ÷1J$8f2d406b-a808-42b8-85bb-89504e184beb
+r	java:S1063"+Replace this use of System.out by a logger.(Íßª‡üÿÿÿÿ8ø²Äù÷1J$c4697de4-24d4-4e04-806c-37f87fc49cc6
+F	java:S106:"+Replace this use of System.out by a logger.(íúÖW8¢…Êù÷1
 ~
-java:S1612A";Replace this lambda with method reference 'Person::getAge'.(¨­ÿ¹8»âáŸ÷1J$8d086f9e-5338-4805-88ea-443102115f0e
-~
-java:S1612K";Replace this lambda with method reference 'Person::getAge'.(”ÿĞ«8ÀâáŸ÷1J$3dd42df9-c2d6-4728-b2c3-03b3163f6ae2
+java:S1612A";Replace this lambda with method reference 'Person::getAge'.(¨­ÿ¹8ø²Äù÷1J$0576e7fd-6e7f-4ccc-8f06-791e2a81791f
+L	java:S106E"+Replace this use of System.out by a logger.(ø„™Üùÿÿÿÿ8¢…Êù÷1
+X
+java:S1612K";Replace this lambda with method reference 'Person::getAge'.(”ÿĞ«8±…Êù÷1
+G	java:S106O"+Replace this use of System.out by a logger.(‘ã”8±…Êù÷1
