@@ -78,12 +78,12 @@ public class Main {
         System.out.println("Highest Withdrawal: " + highestWithdrawal2);
 
 
-        var highestWithdrawl = bank.getWithdrawal()
+        var highestWithdrwal = bank.getWithdrawal()
                 .stream()
                 .max(Comparator.comparing(Transaction::getAmount))
-                .get();
+                .isPresent();
 
-        System.out.println("Highest Withdrawal " + highestWithdrawl);
+        System.out.println("Highest Withdrawal " + highestWithdrwal);
 
         //3. Contar el numero de transacciones realizadas en una fecha especifica
 

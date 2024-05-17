@@ -30,3 +30,9 @@ E
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+R
+"src/workshopweek2/Transaction.java,9\a\9ae12671b96184290b0489e08d7d00040e72c240
+R
+"src/workshopweek2/BankAccount.java,4\2\42bceab6df5888ac077ac26658f7eb8350bda6be
+K
+src/workshopweek2/Main.java,e\7\e719d4d2df9c83a9b25f2a62f8a5f81f2599a6d4
