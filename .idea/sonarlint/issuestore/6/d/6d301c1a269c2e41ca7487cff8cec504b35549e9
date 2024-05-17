@@ -1,10 +1,7 @@
 
-Š
-java:S1192
-"GDefine a constant instead of duplicating this literal "Female" 3 times.(”øáÎ8 âáŸ÷1J$e2fe02ae-13ff-4817-adce-93273a49a1b7
 „
-java:S1612"<Replace this lambda with method reference 'Person::getName'.(¼ê´½ûÿÿÿÿ8°âáŸ÷1J$1eecaf3d-fb34-4ca1-9940-e8bba75b628b
+java:S1612"<Replace this lambda with method reference 'Person::getName'.(¼ê´½ûÿÿÿÿ8°âáŸ÷1J$f91d68cd-7924-4da1-b13d-2f43f3cfc654
 ~
-java:S1612A";Replace this lambda with method reference 'Person::getAge'.(¨­ÿ¹8»âáŸ÷1J$8e19febf-9eb0-4601-a504-d0dcc69c5c3b
+java:S1612A";Replace this lambda with method reference 'Person::getAge'.(¨­ÿ¹8»âáŸ÷1J$8d086f9e-5338-4805-88ea-443102115f0e
 ~
-java:S1612K";Replace this lambda with method reference 'Person::getAge'.(”ÿĞ«8ÀâáŸ÷1J$2a6d6108-8b10-4659-9709-0c587c474e59
+java:S1612K";Replace this lambda with method reference 'Person::getAge'.(”ÿĞ«8ÀâáŸ÷1J$3dd42df9-c2d6-4728-b2c3-03b3163f6ae2

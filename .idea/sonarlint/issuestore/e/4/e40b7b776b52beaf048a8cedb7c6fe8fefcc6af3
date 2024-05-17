@@ -1,7 +1,13 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²ªùõøÿÿÿÿ8ĞëÎã÷1J$c4fdc74e-9604-4ada-a99c-2e7b8f5696a4
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ò´û–üÿÿÿÿ8ÙëÎã÷1J$bb454bba-131a-420e-bd8a-92b0b650b50d
-ƒ	java:S125&"<This block of commented-out lines of code should be removed.(¯»”ùÿÿÿÿ8ÙëÎã÷1J$6cb2e854-4d1e-449d-b15c-a8a078c1aa66
-~	java:S125."<This block of commented-out lines of code should be removed.(†´¸¾8ÙëÎã÷1J$4e1fcf9d-138d-4da2-81eb-79e334476db8
-w
-java:S1128	"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8ÜëÎã÷1J$21cf4f17-6a26-4938-929a-6ceb6cb39395
+p
+java:S16045"(Make this anonymous inner class a lambda(ãâ¶ûşÿÿÿÿ8ü‚í‹ø1J$d44b776c-80a2-4227-9279-e6fd26f3f8a8
+p
+java:S1604@"(Make this anonymous inner class a lambda(­´ƒ¨ûÿÿÿÿ8ü‚í‹ø1J$3c484c8b-ca85-4c60-9422-d999c62a7177
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²ªùõøÿÿÿÿ8ş‚í‹ø1J$1477f390-b4af-4ad3-99ca-48b422313c07
+
+java:S1854G"<Remove this useless assignment to local variable "flatmap2".(ôìı”8„ƒí‹ø1J$16782bd7-37ee-4fe6-85e0-ae970c388cea
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ò´û–üÿÿÿÿ8†ƒí‹ø1J$242bb7a5-43fb-4c42-86eb-38911c95c1bd
+ƒ	java:S125'"<This block of commented-out lines of code should be removed.(¯»”ùÿÿÿÿ8‡ƒí‹ø1J$1c31b76d-55d0-4dde-96d4-cd5ed570b61f
+~	java:S1253"<This block of commented-out lines of code should be removed.(†´¸¾8ˆƒí‹ø1J$2d203bd1-1061-4c0f-bc0c-478452450471
+p
+java:S1481G"-Remove this unused "flatmap2" local variable.(ôìı”8Šƒí‹ø1J$1f896bd1-26b5-4225-8784-f82fe0ab62d0

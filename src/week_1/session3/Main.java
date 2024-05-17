@@ -6,6 +6,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Main {
@@ -40,10 +41,37 @@ public class Main {
         Consumer<String> printNames = System.out::println;
         names.forEach(printNames);
 
+
+        Supplier<String> getName = () -> "Raoul";
+        System.out.println(getName.get());
+
         Supplier<List<Integer>> getNumbers = () -> Arrays.asList(1,2,3,4,5,6,7,8,9,10);
         System.out.println(getNumbers.get());
 
         //Stream.builder().add().add().build();
+        List<?> flatmap = Stream.of(1, 2, 3, 4)
+                .flatMap(new Function<Integer, Stream<?>>() {
+                    @Override
+                    public Stream<?> apply(Integer integer) {
+                        return Stream.of("Alice", "Bob", "Raoul", "Andy", "Camilo");
+                    }
+                })
+                .collect(Collectors.toList());
+
+        // Use System.out.println to print the list
+        System.out.println(flatmap);
+
+        flatmap.forEach(new Consumer<Object>() {
+            @Override
+            public void accept(Object o){
+                System.out.println("- "+o);
+            }
+        });
+
+        var flatmap2 = Stream.of(1,2)
+                .flatMap(integer -> Stream.of("Alice","Bob"))
+                .toList();
+
 
     }
 
