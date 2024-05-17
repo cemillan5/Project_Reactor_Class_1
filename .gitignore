@@ -27,3 +27,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+
+### SonarLint #####
+
+.idea/sonarlint/issuestore/
+.idea/sonarlint/securityhotspotstore/
