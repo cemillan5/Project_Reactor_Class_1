@@ -19,3 +19,11 @@ H
 src/workshop/Person.java,c\c\ccbb8c63d6a62221a63f15cddbe10d6354086173
 F
 src/workshop/Main.java,6\d\6d301c1a269c2e41ca7487cff8cec504b35549e9
+W
+'src/week_1/transaction/Transaction.java,f\c\fc835e9ac2547e9ff4a7ae3895f09c352e3e97bc
+U
+%src/bankTransactions/Transaction.java,e\5\e55c96f72a60d480b6dc9a282cc4212ffc4fca5d
+U
+%src/bankTransactions/BankAccount.java,a\4\a44a2b345d0c38a0fd14651e8113e9b34e982b00
+N
+src/bankTransactions/Main.java,f\0\f022e3a26da67d67d3eaaa51eff416b719929b2a
