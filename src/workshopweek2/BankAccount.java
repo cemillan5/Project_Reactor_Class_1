@@ -1,9 +1,7 @@
 package workshopweek2;
 
-import java.awt.*;
 import java.time.LocalDate;
 import java.util.*;
-import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -49,9 +47,8 @@ public class BankAccount {
                 .map(transactions -> transactions.toList());
     }
 
-    // TODO 4: Implementar filterTransactions utilizando Function y streams
+    // 4. Implementar filterTransactions utilizando Function y streams
     public Optional<List<Transaction>> filterTransactions(Function<Transaction, Boolean> predicate) {
-        // TODO 4
         return Optional.of(transactions
                 .stream()
                 .filter(predicate::apply)
@@ -129,10 +126,10 @@ public class BankAccount {
                 .sum());
     }
 
-    // TODO 12: Implementar getTransactionsSummary utilizando streams, map y collect
+    // 12. Implementar getTransactionsSummary utilizando streams, map y collect
     public Map<String, Double> getTransactionsSummary() {
-        // TODO 12
-        return null;
+        return transactions.stream()
+                .collect(Collectors.groupingBy(Transaction::getType, Collectors.summingDouble(Transaction::getAmount)));
     }
 
 }

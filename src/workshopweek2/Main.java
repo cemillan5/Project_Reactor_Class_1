@@ -2,7 +2,6 @@ package workshopweek2;
 
 
 import java.time.LocalDate;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -46,15 +45,6 @@ public class Main {
         bank.addTransaction(t6);
 
 
-        var bank2 = new BankAccount();
-
-        Transaction t7 = new Transaction();
-        t7.setAmount(1000.0);
-        t7.setType("deposit");
-        t7.setDate(LocalDate.of(2024, 5, 1));
-        bank2.addTransaction(t7);
-
-
         //Verifications
 
         //1 Total balance
@@ -70,6 +60,7 @@ public class Main {
 
 
         // 4 filter by type
+        System.out.println(" ----> " + bank.filterTransactions(trans -> trans.getType().equals("deposit")));
 
 
 

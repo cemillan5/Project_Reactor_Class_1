@@ -1,7 +1,20 @@
 
+Š
+java:S1192
+"GDefine a constant instead of duplicating this literal "Female" 3 times.(”øáÎ8 âáŸ÷1J$7725d939-b33c-46cf-99ed-06f7a739d57a
+m	java:S106"+Replace this use of System.out by a logger.(äµòö8°âáŸ÷1J$d23aecc8-43f2-4e22-a133-13ccc976b71f
+r	java:S106"+Replace this use of System.out by a logger.(ü•şÿÿÿÿ8°âáŸ÷1J$ade4dce4-3f6c-40e0-a190-92a09e9cda0d
+½
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8°âáŸ÷1J$f0e7cf0d-1734-4bfc-8eb3-edb3a00b7cac
 „
-java:S1612"<Replace this lambda with method reference 'Person::getName'.(¼ê´½ûÿÿÿÿ8°âáŸ÷1J$78454a13-e5bb-4973-981d-edac6b5f76b4
+java:S1612"<Replace this lambda with method reference 'Person::getName'.(¼ê´½ûÿÿÿÿ8°âáŸ÷1J$a3aa1012-81b5-4e40-9854-e9667d37f0df
+m	java:S106!"+Replace this use of System.out by a logger.(òçˆ8°âáŸ÷1J$073d0fe0-19df-4c86-96d7-59a792736ece
+r	java:S106)"+Replace this use of System.out by a logger.(…öêéÿÿÿÿÿ8»âáŸ÷1J$5b1c3641-6c74-4cd5-b625-0470fad7451e
+r	java:S1063"+Replace this use of System.out by a logger.(Íßª‡üÿÿÿÿ8ø²Äù÷1J$0d74c4ec-5787-4fdf-9a20-90c8d34c26bb
+l	java:S106:"+Replace this use of System.out by a logger.(íúÖW8¢…Êù÷1J$486414bd-d055-4fe3-b2e5-7ce20585f658
 ~
-java:S1612A";Replace this lambda with method reference 'Person::getAge'.(¨­ÿ¹8ÀâáŸ÷1J$ceea777b-1408-49c9-ae1e-a98408d96fbb
+java:S1612A";Replace this lambda with method reference 'Person::getAge'.(¨­ÿ¹8ø²Äù÷1J$0da2ed43-4125-4153-95d5-d56fe3c69541
+r	java:S106E"+Replace this use of System.out by a logger.(ø„™Üùÿÿÿÿ8¢…Êù÷1J$9405ab30-c664-4035-869f-4989dbd43b6c
 ~
-java:S1612K";Replace this lambda with method reference 'Person::getAge'.(”ÿĞ«8Ì½ïŸø1J$49330094-4903-4802-96f5-11cb55ca5c9e
+java:S1612K";Replace this lambda with method reference 'Person::getAge'.(”ÿĞ«8±…Êù÷1J$1968b79b-3781-43b1-a5e0-40455a071003
+m	java:S106O"+Replace this use of System.out by a logger.(‘ã”8±…Êù÷1J$c12e8a43-18d1-45d7-a1c4-fa724a536287
