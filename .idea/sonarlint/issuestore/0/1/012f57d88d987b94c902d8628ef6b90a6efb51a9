@@ -1,7 +1,0 @@
-
-	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¼î¡Ğ8õä”÷1J$194ffe8b-4619-4dbe-ad3d-e17f7e65337d
-]
-java:S1220""Move this file to a named package.8¡õä”÷1J$1644813a-be0c-4832-89f4-b673eb531000
-˜
-java:S3655"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¢¸Çúùÿÿÿÿ8Àõä”÷1J$b48d7078-48b9-4058-830e-bf0fcab2c6d8
-m	java:S106"+Replace this use of System.out by a logger.(³²â8Ø“æ”÷1J$36346e15-dd2d-43d7-a7a3-cf85a39b87c5
