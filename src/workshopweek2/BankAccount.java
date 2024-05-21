@@ -100,18 +100,26 @@ public class BankAccount {
                 .toList());
     }
 
-    // TODO 10: Implementar transfer utilizando addTransaction
+    // 10. Implementar transfer utilizando addTransaction
     public static void transfer(BankAccount sourceAccount, BankAccount targetAccount, double amount) {
-        // TODO 10
-    /**
-        sourceAccount.getTotalBalance()
-                .stream()
-                .mapToDouble()
+        Optional<Double> optionalBalance = sourceAccount.getTotalBalance();
 
+        if (optionalBalance.isPresent() && optionalBalance.get() >= amount) {
+            Transaction withdrawal = new Transaction();
+            withdrawal.setAmount(amount);
+            withdrawal.setType("withdrawal");
+            withdrawal.setDate(LocalDate.now());
 
-**/
+            Transaction deposit = new Transaction();
+            deposit.setAmount(amount);
+            deposit.setType("deposit");
+            deposit.setDate(LocalDate.now());
 
-
+            sourceAccount.addTransaction(withdrawal);
+            targetAccount.addTransaction(deposit);
+        } else {
+            System.out.println("Insufficient balance for transfer.");
+        }
     }
 
     // 11. Implementar getTotalWithdrawals utilizando getWithdrawals y mapToDouble

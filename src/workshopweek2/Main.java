@@ -45,6 +45,15 @@ public class Main {
         bank.addTransaction(t6);
 
 
+        BankAccount account1 = new BankAccount();
+        BankAccount account2 = new BankAccount();
+
+        account1.addTransaction(t1);
+        account2.addTransaction(t2);
+
+
+
+
         //Verifications
 
         //1 Total balance
@@ -80,6 +89,11 @@ public class Main {
         //9
         System.out.println("greater amount "+ bank.getTransactionsWithAmountGreaterThan(100));
 
+
+        //10
+        BankAccount.transfer(account1,account2,250.00);
+        System.out.println("Account 1 -> " + account1.getTotalBalance());
+        System.out.println("Account 2 -> " + account2.getTotalBalance());
 
         //11 total get withdrawals
 
